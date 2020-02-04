@@ -1,0 +1,13 @@
+<h1>COUNT PAGE</h1>
+<a href = "{% url 'home' %}" >Return</a>
+
+<h2>There are total : {{len}} words </h2>
+
+{{fulltext}}
+
+<br>
+{% for word, counter in worddictionary %}
+<br>
+{{word}} :: {{counter}}
+
+{% endfor %}
